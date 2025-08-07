@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+       body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .upload-section {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .form-label {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .progress {
+      height: 28px;
+    }
+
+    .progress-bar {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-weight: 600;
+    }
+    </style>
+  </head>
+  <body style="background: linear-gradient(to bottom right, #e0f7fa, #ffffff);">
+    
+    <!--header section-->
+    <header class="bg-dark">
+    <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand  text-white" href="#"><span class="text-warning h1">Quiz</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active  text-white" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle  text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item  " href="#">Action</a></li>
+            <li><a class="dropdown-item  " href="#">Another action</a></li>
+            <li><hr class="dropdown-divider "></li>
+            <li><a class="dropdown-item  " href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success  text-white" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+</header>
+<!--Dashboard-->
+<main>
+    <img src="https://i.pinimg.com/736x/b3/10/df/b310dfb5c98aec07a94f97209587256a.jpg" height="50px" width="50px" class="d-inline-block mt-2 ms-5 fs-3 rounded-3" alt="">
+    <h1 class="text-dark mt-4 ms-4 d-inline-block fs-3">interactive Dashboard (No Js)</h1>
+<div class="container-fluid my-4">
+  <div class="row g-2">
+
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card text-center ">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">Click the button below to see more details.</p>
+
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#accordion1">
+            Show Details
+          </button>
+
+          <div class="accordion mt-3">
+            <div id="accordion1" class="accordion-collapse collapse">
+              <div class="accordion-body bg-info text-dark rounded-3">
+                This is the hidden accordion content for Card 1.
+              </div>
+            </div>
+          </div>
+
+          <p class="card-text">Assigned To: Viraj</p>
+          <p class="card-text">Next Step: Job Placement</p>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">Click the button below to see more details.</p>
+
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2">
+            Show Details
+          </button>
+
+          <div class="accordion mt-3">
+            <div id="accordion2" class="accordion-collapse collapse">
+              <div class="accordion-body bg-info text-dark rounded-3">
+                This is the hidden accordion content for Card 2.
+              </div>
+            </div>
+          </div>
+          <p class="card-text">Assigned To: Viraj</p>
+          <p class="card-text">Next Step: Job Placement</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">Click the button below to see more details.</p>
+
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3">
+            Show Details
+          </button>
+
+          <div class="accordion mt-3">
+            <div id="accordion3" class="accordion-collapse collapse">
+              <div class="accordion-body bg-info text-dark rounded-3">
+                This is the hidden accordion content for Card 3.
+              </div>
+            </div>
+          </div>
+             <br>
+          <button type="button" class="btn btn-secondary" 
+        data-bs-toggle="popover" 
+        data-bs-trigger="focus" 
+        title="Popover Title" 
+        data-bs-content="This is the popover message."> Click me</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</main>
+<!-- Third Section -->
+<div class="container my-5">
+  <h1 class="text-center mb-4">Online Quiz</h1>
+  <h3><span class="text-success">Introduction</span></h3>
+  <p class="my-4">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto obcaecati dolorem quidem pariatur alias cupiditate neque delectus quae quas consequuntur reprehenderit animi quod natus accusamus consectetur odio cum, quis iure.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit similique perspiciatis alias atque. Ipsa distinctio earum architecto quos facere rem.
+  </p>
+
+  <div class="row g-4 text-center">
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card bg-light shadow-lg rounded-4">
+        <div id="carousel1" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+          <div class="carousel-inner rounded-3">
+            <div class="carousel-item active">
+              <img src="https://pt.quizur.com/_image?href=https://img.quizur.com/f/img63571a05c63b77.89045275.png" class="w-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="https://pt.quizur.com/_image?href=https://img.quizur.com/f/img5d570a0a507dc0.74507285.png" class="w-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="https://pt.quizur.com/_image?href=https://img.quizur.com/f/img5f4d8e4c2ae352.04956998.png" class="w-100" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Task on HTML Quiz</h5>
+          <p class="card-text">Quiz available only once a day – 35 mins</p>
+          <div class="mb-2">
+            <span class="badge bg-primary">HTML</span>
+            <span class="badge bg-success">HTML5</span>
+            <span class="badge bg-warning text-dark">Semantic</span>
+          </div>
+          <a href="#" class="btn btn-info text-dark fw-bold">Start <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 (Same as Card 1) -->
+    <div class="col-md-4">
+      <div class="card bg-light shadow-lg rounded-4">
+        <div id="carousel2" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+          <div class="carousel-inner rounded-3">
+            <div class="carousel-item active">
+              <img src="https://pt.quizur.com/_image?href=https://img.quizur.com/f/img63571a05c63b77.89045275.png" class="w-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="https://pt.quizur.com/_image?href=https://img.quizur.com/f/img5d570a0a507dc0.74507285.png" class="w-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="https://pt.quizur.com/_image?href=https://img.quizur.com/f/img5f4d8e4c2ae352.04956998.png" class="w-100" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Task on HTML Quiz</h5>
+          <p class="card-text">Quiz available only once a day – 35 mins</p>
+          <div class="mb-2">
+            <span class="badge bg-primary">HTML</span>
+            <span class="badge bg-success">HTML5</span>
+            <span class="badge bg-warning text-dark">Semantic</span>
+          </div>
+          <a href="#" class="btn btn-info text-dark fw-bold">Start <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 (Same as Card 1) -->
+    <div class="col-md-4">
+      <div class="card bg-light shadow-lg rounded-4">
+        <div id="carousel3" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+          <div class="carousel-inner rounded-3">
+            <div class="carousel-item active">
+              <img src="https://pt.quizur.com/_image?href=https://img.quizur.com/f/img63571a05c63b77.89045275.png" class="w-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="https://pt.quizur.com/_image?href=https://img.quizur.com/f/img5d570a0a507dc0.74507285.png" class="w-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="https://pt.quizur.com/_image?href=https://img.quizur.com/f/img5f4d8e4c2ae352.04956998.png" class="w-100" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Task on HTML Quiz</h5>
+          <p class="card-text">Quiz available only once a day – 35 mins</p>
+          <div class="mb-2">
+            <span class="badge bg-primary">HTML</span>
+            <span class="badge bg-success">HTML5</span>
+            <span class="badge bg-warning text-dark">Semantic</span>
+          </div>
+          <a href="#" class="btn btn-info text-dark fw-bold">Start <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Online courses-->
+<!-- Dashboard Header -->
+<div class="container py-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold">My Courses</h2>
+    <button class="btn btn-primary"><i class="fas fa-plus"></i> Enroll New Course</button>
+  </div>
+
+  <p>
+    Online courses offer a flexible and convenient way to learn new skills or further your education from anywhere with an internet connection. Platforms like Coursera, edX, and Udemy provide access to a wide range of courses, from free introductory classes to professional certifications. These courses can be structured for formal qualifications or used for personal enrichment and skill development. 
+  </p>
+
+  <!-- Courses Row -->
+   
+<!-- Course Detail Section -->
+  <div class="container my-5">
+    <div class="row align-items-center">
+
+      <!-- Left Side: Language Image -->
+      <div class="col-md-6 text-center">
+        <img src="https://knowxbox.com/blogs/wp-content/uploads/2024/06/Get-Ahead-in-English-Communication-with-These-Tips-and-Tricks-from-Top-Spoken-English-Classes.png" alt="Language Image" class="course-img" height="350px" width="350px">
+      </div>
+
+      <!-- Right Side: Course Info -->
+      <div class="col-md-6">
+        <h2 class="fw-bold mb-3">Spoken English Mastery Course</h2>
+        <p class="text-muted">Learn to speak fluent English in 30 days with real-life conversation practice. Ideal for beginners and intermediates.</p>
+        
+        <ul class="list-unstyled mb-3">
+          <li><strong>Instructor:</strong> Prof. Rakesh Sharma</li>
+          <li><strong>Level:</strong> Beginner to Intermediate</li>
+          <li><strong>Duration:</strong> 30 Days</li>
+          <li><strong>Mode:</strong> Online + Recorded</li>
+          <li><strong>Language:</strong> English & Hindi</li>
+        </ul>
+
+        <div class="mb-3">
+          <span class="badge bg-success">Certificate</span>
+          <span class="badge bg-info text-dark">Live Classes</span>
+          <span class="badge bg-warning text-dark">Affordable</span>
+        </div>
+
+        <!-- Enroll Button -->
+        <a href="/courses/spoken-english" class="btn btn-primary btn-lg">
+          Enroll Now
+        </a>
+      </div>
+    </div>
+  </div>
+<!--Second-->
+  <div class="row g-4">
+
+    <!-- Course Card 1 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="https://media.licdn.com/dms/image/v2/D5612AQFMxThwQn7HZg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1697274440798?e=2147483647&v=beta&t=QLEHZgio8uRKebsNCrjEdh3rOvVmSUa7dSYgzCPBxBo" class="card-img-top" alt="HTML Course">
+        <div class="card-body">
+          <h5 class="card-title">HTML & Web Basics</h5>
+          <p class="card-text text-muted">Learn HTML, the backbone of web development, from scratch.</p>
+          <div class="mb-2">
+            <span class="badge bg-primary">HTML</span>
+            <span class="badge bg-secondary">Beginner</span>
+          </div>
+          <div class="progress my-2" style="height: 8px;">
+            <div class="progress-bar bg-success" style="width: 70%"></div>
+          </div>
+          <p class="small text-end">70% completed</p>
+          <a href="#" class="btn btn-outline-primary w-100 mb-2">Continue</a>
+          <a href="course-detail.html" class="btn btn-sm btn-info w-100 text-white">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course Card 2 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="https://media.licdn.com/dms/image/v2/D5612AQFMxThwQn7HZg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1697274440798?e=2147483647&v=beta&t=QLEHZgio8uRKebsNCrjEdh3rOvVmSUa7dSYgzCPBxBo" class="card-img-top" alt="CSS Course">
+        <div class="card-body">
+          <h5 class="card-title">CSS Styling Mastery</h5>
+          <p class="card-text text-muted">Master the art of styling with modern CSS and Flexbox/Grid.</p>
+          <div class="mb-2">
+            <span class="badge bg-info text-dark">CSS</span>
+            <span class="badge bg-warning text-dark">Intermediate</span>
+          </div>
+          <div class="progress my-2" style="height: 8px;">
+            <div class="progress-bar bg-warning" style="width: 45%"></div>
+          </div>
+          <p class="small text-end">45% completed</p>
+          <a href="#" class="btn btn-outline-primary w-100 mb-2">Continue</a>
+          <a href="course-detail.html" class="btn btn-sm btn-info w-100 text-white">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course Card 3 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="https://media.licdn.com/dms/image/v2/D5612AQFMxThwQn7HZg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1697274440798?e=2147483647&v=beta&t=QLEHZgio8uRKebsNCrjEdh3rOvVmSUa7dSYgzCPBxBo" class="card-img-top" alt="JS Course">
+        <div class="card-body">
+          <h5 class="card-title">JavaScript for Beginners</h5>
+          <p class="card-text text-muted">Understand JS fundamentals and build interactive websites.</p>
+          <div class="mb-2">
+            <span class="badge bg-dark">JavaScript</span>
+            <span class="badge bg-success">New</span>
+          </div>
+          <div class="progress my-2" style="height: 8px;">
+            <div class="progress-bar bg-primary" style="width: 10%"></div>
+          </div>
+          <p class="small text-end">10% completed</p>
+          <a href="#" class="btn btn-outline-primary w-100 mb-2">Continue</a>
+          <a href="course-detail.html" class="btn btn-sm btn-info w-100 text-white">Details</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--Online coures End Here -->
+
+<div class="container my-5">
+  <h3 class="mb-4">Upload File</h3>
+
+  <!-- File Input -->
+  <div class="mb-3">
+    <label for="formFile" class="form-label">Choose your file</label>
+    <input class="form-control" type="file" id="formFile">
+  </div>
+
+  <!-- Simulated Progress Bar -->
+  <div class="mb-2">Uploading...</div>
+  <div class="progress" style="height: 20px;">
+    <div class="progress-bar bg-success" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+      60%
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script>
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+  const popoverList = [...popoverTriggerList].map(triggerEl => new bootstrap.Popover(triggerEl));
+</script>
+
+  </body>
+</html>
